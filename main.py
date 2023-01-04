@@ -2,9 +2,12 @@ import requests
 import lxml
 from bs4 import BeautifulSoup
 from smtplib import SMTP
+import os
+from dotenv import load_dotenv
+load_dotenv('projects\price tracker\.env')
 
-my_email='arunabh.sreejita@gmail.com'
-password='wiumvwsoubiynhnk'
+my_email=os.getenv('EMAIL')
+password=os.getenv('PASS')
 
 URL='https://www.amazon.com/Instant-Vortex-Plus-Air-Fryer/dp/B07VHFMZHJ/ref=nav_signin?crid=1KA2DNVL2LK47&keywords=air+fyer&qid=1672237796&sprefix=air+fye%2Caps%2C303&sr=8-3&claim_type=EmailAddress&new_account=1&'
 header={
