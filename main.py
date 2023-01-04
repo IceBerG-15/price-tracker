@@ -31,7 +31,7 @@ if price<user_price:
             connection.login(user=my_email,password=password)
             connection.sendmail(
                 from_addr=my_email,
-                to_addrs='warmachiness13@gmail.com',
+                to_addrs='sender_email@gmail.com',        #email in which u want the notification
                 msg=f'Subject:Air Fryer Price drop alert \n\n The price for the Air Fryer is ${price}.Hurry, Buy Now'
             )
 
