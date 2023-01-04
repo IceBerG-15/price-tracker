@@ -13,6 +13,7 @@ Prerequisite:
 1. have the knowledge about os and dotenv
 
 Changes you have to make before running the program:
-1. chnage the URL and set your products URL
+1. change the URL and set your products URL
 2. location of .env file, where you'll store your confidentials
+3. change Email Address
   
