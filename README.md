@@ -1,19 +1,43 @@
-# price-tracker
+# Price Tracker
+A simple Python script for tracking the price of a product on Amazon and sending email notifications when the price drops below a certain threshold.
 
-This Program will track the price of the product and send email if the price goes lower than your set value. Price of the product is web scrapped from the website.
+## Features
+Scrapes the Amazon product page for the current price.
+Sends an email notification if the price drops below a specified threshold.
+Uses environment variables for email authentication to ensure security.
 
-Modules used:
-1. requests
-2. SMTPlib
-3. BeautifulSoup
-4. os
-5. dotenv
+## Prerequisites
+Before running the script, ensure you have the following installed:
 
-Prerequisite:
-1. have the knowledge about os and dotenv
+- Python 3.x
+- Required Python packages: requests, beautifulsoup4, smtplib, dotenv
 
-Changes you have to make before running the program:
-1. change the URL and set your products URL
-2. location of .env file, where you'll store your confidentials
-3. change Email Address
-  
+## Usage
+1. Clone the repository:
+
+```bash
+git clone https://github.com/IceBerG-15/price-tracker.git
+```
+2. Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+3. Create a .env file in the project directory with the following variables:
+
+```plaintext
+EMAIL=your_email@gmail.com
+PASS=your_email_password
+```
+Replace your_email@gmail.com with your email address and your_email_password with your email password.
+
+Modify the URL variable in the script to the Amazon product page URL you want to track.
+
+## Run the script:
+
+```bash
+python main.py
+```
+## Notes
+- Ensure that you have allowed less secure apps in your Gmail account settings to allow sending emails via SMTP.
+- Customize the user_price variable in the script to set your desired price threshold.
