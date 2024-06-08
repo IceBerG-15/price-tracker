@@ -5,11 +5,13 @@ A simple Python script for tracking the price of a product on Amazon and sending
 Scrapes the Amazon product page for the current price.
 Sends an email notification if the price drops below a specified threshold.
 Uses environment variables for email authentication to ensure security.
+
 ## Prerequisites
 Before running the script, ensure you have the following installed:
 
-Python 3.x
-Required Python packages: requests, beautifulsoup4, smtplib, dotenv
+- Python 3.x
+- Required Python packages: requests, beautifulsoup4, smtplib, dotenv
+
 ## Usage
 1. Clone the repository:
 
